@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Centigrade to Fahrenheit</title>
+	<style>
+        body 
+        {
+            margin-left: 300px;
+            margin-right: 300px;
+        }
+        code
+        {
+        	font-family: arial;
+        }
+        samp 
+        {
+            font-family: monospace;
+            font-size: 16px;
+        }
+        var
+        {
+        	font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+	<h1>Centigrade to Fahrenheit</h1>
+	<hr>
+	<header>
+		<h2>Problem Statement</h2>
+		<p style="font-size: 18px;">Write a code in any programming language that converts Centigrade to Fahrenheit.</p>
+	</header>
+	<hr>
+	<section>
+		<h1>Code......</h1>
+		<pre>
+		<code>
+#include<iostream.h>
+#include<conio.h>
+int main()
+{
+	int t;
+	cin >> t;
+	while(t--)
+	{
+		float cen, fah;
+		cout << "Enter temperature in Celsius: ";
+		cin >> cen;
+		fah = (cen * 9.0)/5.0 + 32;
+		cout << "\nTemperature in Centigrade: "<< cen<sup>o</sup>C << endl;
+		cout << "\nTemperature in Fahrenheit: "<< fah<sup>o</sup>F << endl;
+	}
+	return 0;
+}
+		</code>	
+		</pre>
+	</section>
+	<hr>
+	<section>
+		<h2>Sample Input</h2>
+		<pre>
+			<samp>5</samp>
+			<samp>0<sup>o</sup>C</samp>
+			<samp>5.5<sup>o</sup>C</samp>
+			<samp>10<sup>o</sup>C</samp>
+			<samp>15<sup>o</sup>C</samp>
+			<samp>20<sup>o</sup>C</samp>
+		</pre>
+	</section>
+	<hr>
+	<section>
+		<h2>Sample Output</h2>
+		<pre>
+			<samp>32<sup>o</sup>F</samp>
+			<samp>41.9<sup>o</sup>F</samp>
+			<samp>50<sup>o</sup>F</samp>
+			<samp>59<sup>o</sup>F</samp>
+			<samp>68<sup>o</sup>F</samp>
+		</pre>
+	</section>
+	<hr>
+	<article>
+		<h2>Variables used in the program</h2>
+		<pre>
+		<var>t</var>     <var>cen</var>     <var>fah</var>
+		</pre>
+	</article>
+	<hr>
+	<footer>
+		<h2>Complexity</h2>
+        <p style="font-size: 18px;">The Complexity of the above program is <strong>O(n)</strong></p>
+	</footer>
+</body>
+</html>
