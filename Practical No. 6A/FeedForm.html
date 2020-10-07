@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Feedback Form</title>
+	<style>
+		.container
+		{
+			display: inline-block;
+			padding: 50px;
+			border: 3px solid black;
+		}
+		body
+		{
+			text-align: center;
+		}
+		label
+		{
+			font-family: arial;
+		}
+		input
+		{
+			font-family: monospace;
+			border:3px solid black;
+		}
+		textarea
+		{
+			font-family: monospace;
+			border: 3px solid black;
+		}
+	</style>
+</head>
+<body>
+	<h1>Feedback Form</h1>
+	<h2>Course Name:PL3</h2>
+	<div class="container">
+	<form method="post" autocomplete="on" id="form">
+		<section>
+			<label for="prn"><b>PRN:</b></label>
+			<br>
+			<input type="text" name="PRN" size=30 placeholder="Enter your PRN.." required>
+			<br><br>
+			<label for="fname"><b>First Name:</b></label>
+			<br>
+			<input type="text" name="First Name" size=30 placeholder="Enter your first name here.." required>
+			<br><br>
+			<label for="mname"><b>Middle Name:</b></label>
+			<br>
+			<input type="text" name="Middle Name" size=30 placeholder="Enter your middle name here..">
+			<br><br>
+			<label for="lname"><b>Last Name:</b></label>
+			<br>
+			<input type="text" name="Last Name" size=30 placeholder="Enter your last name here..">
+			<br><br>
+			<label for="myphoto"><b>Select Image</b></label>
+			<input type="file" name="myphoto" accept="image/*">
+			<br>
+		</section>
+		<aside style="font-family: arial;">
+			<p><b>Are you satisfied with this course teaching ?</b></p>
+			<input type="radio" name="ans">
+			<label for="yes">Yes</label>
+			<input type="radio" name="ans">
+			<label for="no">No</label>
+		</aside>
+		<article>
+			<p style="font-family: arial;"><b>Feedback:</b></p>
+			<textarea name="Feedback" rows="10" cols="50" maxlength="400" placeholder="Give any other feedback/suggestions here" required></textarea>
+		</article>
+		<br>
+		<footer>
+			<button type="submit" onclick="myFun()" autofocus style="border: 3px solid black;">Submit</button>
+			<input type="reset" name="Reset" style="font-family: arial;">
+		</footer>
+		<br>
+		<button type="submit" formaction="submitanother.php" formmethod="post" disabled>Submit to another page using post</button>
+		<br><br>
+		<input type="image" name="subimage" src="img.png" alt="Submit" width="30" height="30">
+	</form>
+	</div>
+	<br><br>	
+	<button type="submit" form="form" value="Submit">Submit outside the form tag</button>
+	<script>
+		function myFun()
+		{
+			alert("Thank you for your valuable feedback!!");
+		}
+	</script>
+</body>
+</html>
