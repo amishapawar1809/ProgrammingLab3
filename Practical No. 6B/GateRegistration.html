@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>GATE Registration</title>
+	<style>
+		body
+		{
+			padding-left: 80px;
+		}
+		fieldset
+		{
+			background-color: #eeeeee;
+			font-size: 18px;
+			max-width: 500px;
+		}
+		legend
+		{
+			font-family: arial;
+			font-size: 20px;
+			font-weight: bold;
+			background-color: black;
+			color: white;
+			padding: 10px 20px;
+		}
+		label
+		{
+			font-weight: bold;
+		}
+		button
+		{
+			background-color: black;
+			color: white;
+			font-size: 20px;
+			padding: 12px 28px;
+		}
+	</style>
+</head>
+<body>
+	<form>
+		<h1>GATE Registration</h1>
+		<section>
+			<fieldset>
+				<legend>Student Information</legend>
+				<label for="fname">First Name:</label>
+				<input type="text" name="First Name" size=30 placeholder="Enter your first name here.." required>
+				<br><br>
+				<label for="mname">Middle Name:</label>
+				<input type="text" name="Middle Name" size=30 placeholder="Enter your middle name here..">
+				<br><br>
+				<label for="lname">Last Name:</label>
+				<input type="text" name="Last Name" size=30 placeholder="Enter your last name here..">
+				<br><br>
+				<label for="pname">Parent's Name:</label>
+				<input type="text" name="Parent's Name" size=30 placeholder="Enter your parent's name here..">
+				<br><br>
+				<label for="mobNo">Mobile No:</label>
+				<input type="text" name="Mobile No:" size=30 placeholder="Enter you mobile no.." required>
+				<br><br>
+				<label for="email">Email-ID:</label>
+				<input type="email" name="email" size=30 placeholder="Enter you email-id.." required>
+				<br><br>
+				<label for="id">Choose ID proof:</label>
+				<select name="ID proof">
+					<option value="pancard">PAN Card</option>
+					<option value="passport">Passport</option>
+					<option value="aadharcard">Aadhar Card</option>
+					<option value="votercard">Voter Card</option>
+					<option value="drivinglicense">Driving License</option>
+					<option value="idcard" selected>College Identity Card</option>		
+				</select>
+				<br><br>
+				<label for="idproof"><b>Select ID Proof</b></label>
+				<input type="file" name="ID proof">
+				<br>
+				<p><b>Address:</b></p>
+				<textarea name="Address" rows="10" cols="40" maxlength="200" placeholder="Enter your address here.." required></textarea>
+			</fieldset>
+		</section>
+		<section>
+			<fieldset>
+				<legend>Educational Information</legend>
+				<label for="qualification">Select your qualification:</label>
+				<select name="qualification">
+					<option value="BE">B.E.</option>
+					<option value="BTech" selected>B.Tech.</option>
+					<option value="BPharm">B.Pharm.</option>
+					<option value="BArch">B.Arch.</option>
+					<option value="BSc">B.Sc.</option>
+					<option value="ME">M.E.</option>
+					<option value="MTech">M.Tech.</option>
+					<option value="MSc">M.Sc.</option>
+					<option value="MA">M.A</option>
+				</select>
+				<br><br>
+				<label for="branch">Select your branch:</label>
+				<br>
+				<select name="branch" multiple>
+					<option value="CSE">Computer Science and Engineering</option>
+					<option value="IT">Infomation Technology</option>
+					<option value="Electro">Electronics</option>
+					<option value="Electri">Electrical</option>
+					<option value="Civil">Civil</option>
+					<option value="Mech">Mechanical</option>
+				</select>
+				<br><br>
+				<label for="collegename">College Name:</label>
+				<input list="collegename" name="collegename">
+				<datalist id="collegename">
+					<option value="Walchand College of Engineering, Sangli.">
+					<option value="College of Engineering, Pune.">
+					<option value="Veermata Jijabai Technological Institute, Mumbai.">
+					<option value="Pune Institute of Computer Technology, Pune.">
+					<option value="D.Y. Patil College of Engineering, Pune.">
+					<option value="Government College of Engineering, Chandrapur.">
+					<option value="Vishwakarma Institute of Technology, Pune.">
+					<option value="Pune Institute of Computer Technology, Society for Computer Technology and Research">
+					<option value="Rajarambapu Institute of Technology, Islampur.">
+					<option value="Indian Institute of Technology, Bombay.">
+				</datalist>
+				<br><br>
+				<label for="universityname">University Name</label>
+				<input list="universityname" name="universityname">
+				<datalist id="universityname">
+					<option value="Savitribai Phule Pune University">
+					<option value="University of Mumbai">
+					<option value="Maharashtra University of Health Sciences, Nashik">
+					<option value="Shivaji University, Kolhapur">
+					<option value="Rashtrasant Tukadoji Maharaj Nagpur University">
+				</datalist>
+			</fieldset>
+		</section>
+		<section>
+			<fieldset>
+				<legend>Exam Preferences</legend>
+				<label for="exambranch">Exam paper branch:</label>
+				<select name="Exambranch">
+					<option value="CSE">Computer Science and Engineering</option>
+					<option value="IT">Infomation Technology</option>
+					<option value="Electro">Electronics Engineering</option>
+					<option value="Electri">Electrical Engineering</option>
+					<option value="Civil">Civil Engineering</option>
+					<option value="Mech">Mechanical Engineering</option>
+					<option value="Chem">Chemical Engineering</option>
+					<option value="Agri">Agricultural Engineering</option>
+					<option value="Aero">Aerospace Engineering</option>
+					<option value="Mine">Mining Engineering</option>
+					<option value="Instrument">Instrumentation Engineering</option>
+				</select>
+				<br><br>
+				<label for="city">Select exam city:</label>
+				<select>
+					<optgroup label="Maharashtra">
+						<option value="mumbai">Mumbai</option>
+						<option value="pune">Pune</option>
+						<option value="sangli">Sangli</option>
+						<option value="kolhapur">Kolhapur</option>
+						<option value="nashik">Nashik</option>
+						<option value="nagpur">Nagpur</option>
+					</optgroup>
+					<optgroup label="Goa">
+						<option value="goa">Goa</option>
+					</optgroup>
+					<optgroup label="Karnataka">
+						<option value="gulbarga">Gulbarga</option>
+						<option value="bengaluru">Bengaluru</option>
+						<option value="belgaum">Belgaum</option>
+					</optgroup>
+				</select>
+			</fieldset>
+		</section>
+		<br>
+		<footer>
+			<button type="submit" onclick="myFun()">Submit</button>
+			<button type="reset" value="Reset">Reset</button>
+		</footer>
+	</form>
+	<script>
+		function myFun()
+		{
+			alert("Successfully registered!...");
+		}
+	</script>
+</body>
+</html>
