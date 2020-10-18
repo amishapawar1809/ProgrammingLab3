@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Astronomical Objects</title>
+	<style>
+		header
+		{
+			text-align: center;
+		}
+		nav
+		{
+			background-color: blue;
+			text-align: center;
+			padding: 15px;
+			margin: 0px;
+			font-size: 25px;
+			line-height: 30px;
+			height: 30px;
+			border-bottom: 1px solid #888;
+			color: #fff;
+		}
+		a
+		{
+			color: white;
+		}
+		aside
+		{
+			width: 50%;
+			padding-left: 50px;
+			margin-left: 50px;
+			padding-right: 50px;
+			padding-top: 140px;
+			padding-bottom: 140px;
+			float: right;
+			background-color: lightgray;
+			font-size: 25px;
+		}
+		footer
+		{
+			display: inline-block;
+			border: 3px solid black;
+			padding-bottom: 10px;
+			padding: 10px 10px;
+			background-color: #f1f1f1;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<h1>Astronomy</h1>
+		<h2 style="color: green;">Astronomical Objects' Information</h2>
+		<nav>
+			<a href="http://www.astronomydaily.com/" style="padding-right: 100px">AstronomyDaily</a>
+			<a href="http://www.nasa.gov/" style="padding-right: 100px">NASA</a>
+			<a href="http://www.heavens-above.com/">HeavensAbove</a>
+		</nav>
+	</header>	
+	<aside style="background-image: url('AstroObj.png')">
+		<p style="font-size: 20px;color: white;">In astronomy an astronomical object or celestial object is a naturally occurring physical entity, association, or structure that exists in the observable universe. In astronomy, the terms object and body are often used interchangeably. However, an astronomical body or celestial body is a single, tightly bound, contiguous entity, while an astronomical or celestial object is a complex, less cohesively bound structure, which may consist of multiple bodies or even other objects with substructures.</p>
+	</aside>
+	<section>	
+		<figure>
+			<img src="astronomy-objects.png" alt="astronomy-objects" usemap="#region" width="500" height="500">
+			<div class="desion">
+			<map name="region">
+				<area shape="circle" coords="55,68,55" href="https://en.wikipedia.org/wiki/Star" onclick="star()">
+				<area shape="circle" coords="185,68,55" href="https://en.wikipedia.org/wiki/Planet" onclick="planet()">
+				<area shape="circle" coords="310,68,55" href="https://en.wikipedia.org/wiki/Moon" onclick="moon()">
+				<area shape="poly" coords="400,130,395,50,400,50,450,30,465,20,490,30,460,80" href="https://en.wikipedia.org/wiki/Asteroid" onclick="asteroid()">
+				<area shape="rect" coords="0,196,110,300" href="https://en.wikipedia.org/wiki/Nebula" onclick="nebula()">
+				<area shape="rect" coords="135,196,245,300" href="https://en.wikipedia.org/wiki/Star_cluster" onclick="star_cluster()">
+				<area shape="circle" coords="310,245,55" href="https://en.wikipedia.org/wiki/Galaxy" onclick="galaxy()">
+				<area shape="poly" coords="380,260,400,320,450,255,500,220,460,180,430,225" href="https://en.wikipedia.org/wiki/Pulsar" onclick="pulsar()">
+				<area shape="circle" coords="120,400,55" href="https://en.wikipedia.org/wiki/Quasar" onclick="quasar()">
+				<area shape="rect" coords="185,340,300,450" href="https://en.wikipedia.org/wiki/Black_hole" onclick="black_hole()">
+				<area shape="rect" coords="320,340,435,450" href="https://en.wikipedia.org/wiki/Dark_matter" onclick="dark_matter()">
+			</map>
+			</div>
+			<figcaption style="font-size: 18px;"><b>Astronomical Objects</b></figcaption>
+		</figure>
+	</section>
+	<footer>
+		<h2>Author's Information:</h2>
+		<address>
+			Amisha Madan Pawar<br>
+			Contact number: 7620399317<br>
+			Contact mail: <u style="color: blue;">madanpawarm64@gmail.com</u>
+		</address>
+	</footer>
+	<script>
+		function star()
+		{
+			alert("You clicked Star");
+		}
+		function planet()
+		{
+			alert("You clicked Planet");
+		}
+		function moon()
+		{
+			alert("You clicked Moon");
+		}
+		function asteroid()
+		{
+			alert("You clicked Asteroid");
+		}
+		function nebula()
+		{
+			alert("You clicked Nebula");
+		}
+		function star_cluster()
+		{
+			alert("You clicked Star_cluster");
+		}
+		function galaxy()
+		{
+			alert("You clicked Galaxy");
+		}
+		function pulsar()
+		{
+			alert("You clicked Pulsar");
+		}
+		function quasar()
+		{
+			alert("You clicked Quasar");
+		}
+		function black_hole()
+		{
+			alert("You clicked Black_hole");
+		}
+		function dark_matter()
+		{
+			alert("You clicked Dark_matter");
+		}
+	</script>
+</body>
+</html>
