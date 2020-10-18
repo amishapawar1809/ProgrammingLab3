@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Video Player</title>
+	<style>
+		body
+		{
+			padding-left: 100px;
+		}
+		.container
+		{	
+			position: center;	
+			text-align: center;	
+			display: inline-block;
+			border: 5px solid gray;	
+			padding-left: 100px;
+			padding-right: 100px;
+			padding-top: 50px;
+			padding-bottom: 50px;
+		}
+		h3
+		{
+			color: blue;
+			font-size: 20px;
+			text-decoration: underline;
+		}
+		header
+		{
+			text-align: center;
+		}
+		nav
+		{
+			background-color: lightgray;
+			text-align: center;
+			padding: 15px;
+			margin: 0px;
+			font-size: 25px;
+			line-height: 30px;
+			height: 80px;
+			border-bottom: 1px solid #888;
+		}
+		a
+		{
+			color: black;
+		}
+		audio
+		{
+			background-color: black;
+			display: inline-block;
+			border: 3px solid black;
+		}
+		footer
+		{
+			display: inline-block;
+			border: 3px solid black;
+			padding-left: 80px;
+			padding-right: 80px;
+		}
+		.checked 
+		{
+  			color: red;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h3>Video Player Name</h3>
+		<header>
+			<h1>Amisha's Video Player</h1>
+			<h2>AMP</h2>
+		</header>
+		<h3>Navigation Links</h3>
+		<nav>
+			<a href="http://kmplayer.com/">Music Video Streaming Website</a>&nbsp;|&nbsp;
+			<a href="https://www.lyrics.com/">Lyrics Website</a>
+			<br><hr>
+			<a href="AudioPlayer.html">Audio Player</a>&nbsp;|&nbsp;
+			<a href="YouTubePlayer.html">YouTube Player</a>&nbsp;|&nbsp;
+			<a href="ExternalResources.html">External Resources</a>
+		</nav>
+		<h3>Vidoe Players</h3>
+		<section>
+			<h2>Video 1</h2>
+			<video width="500" height="400" controls autoplay loop>
+				<source src="Video2.mp4" type="video/mp4">
+			</video>
+			<hr>	
+			<h2>Video 2</h2>
+			<video width="500" height="400" controls="disabled" muted="enabled" autoplay="enabled"> 
+				<source src="Video1.mp4" type="video/mp4">
+				<track kind="subtitles" src="Video2.vtt" srclang="en" label="English" default>
+			</video>
+		</section>
+		<br>	
+		<h3>Credits</h3>
+		<footer>
+			<h2>Credits</h2>
+			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+			<span class="fa fa-star checked"></span>
+			<span class="fa fa-star checked"></span>
+			<span class="fa fa-star checked"></span>
+			<span class="fa fa-star checked"></span>
+			<span class="fa fa-star checked"></span>
+			<h4>Album name:</h4>
+			<p>Tom and Jerry</p>
+		</footer>
+	</div>
+</body>
+</html>
