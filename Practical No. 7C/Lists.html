@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Lists</title>
+	<style>
+		h1
+		{
+			text-align: center;
+		}
+		h2
+		{
+			font-size: 25px;
+		}
+		h3
+		{
+			color: blue;
+			font-size: 20px;
+			text-decoration: underline;
+		}
+		nav
+		{
+			background-color: black;
+			text-align: center;
+			padding: 15px;
+			margin: 0px;
+			font-size: 25px;
+			line-height: 30px;
+			border-bottom: 1px solid #888;	
+		}
+		a
+		{
+			color: white;
+			font-size: 20px;
+		}
+		.column
+		{
+			float: left;
+		}
+		.row:after 
+		{
+			content: "";
+			display: table;
+			clear: both;
+		}
+		ul
+		{
+			font-size: 18px;
+			list-style: circle;
+		}
+		dt
+		{
+			font-weight: bold;
+		}
+		address
+		{
+			display: inline-block;
+			border: 2px solid black; 
+			padding: 20px;
+		}
+		hr
+		{
+			border: 3px solid black;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<h3>Header section</h3>
+		<h1>Lists</h1>
+		<h3>Navigation links section</h3>
+		<h2 style=";text-align: center;background-color: lightgray;
+			padding: 10px;
+			margin: 0px;
+			border-bottom: 1px solid #888;">Other information links</h2>
+		<nav>
+			<a href="CSEDeptTable.html">CSE Department's Information Table</a>&nbsp;&nbsp;&nbsp;
+			<a href="MonthlyExpense.html">Monthly Expense table</a>
+		</nav>
+	</header>
+	<section>
+		<h3>Unordered list section</h3>
+		<h2>Features of C programming language:</h2>
+		<ul>
+			<li>Procedural Language</li>
+			<li>Fast and Efficient</li>
+			<li>Simple</li>
+			<li>Mid-level programming language</li>
+			<li>Extensible</li>
+			<li>Portable</li>
+			<li>Modularity</li>
+		</ul>
+	</section>
+	<hr>
+	<article>
+		<h3>Ordered list section</h3>
+		<h2>Favourite books:</h2>
+		<div class="row">
+		  	<div class="column">
+		    	<ol reversed style="font-size: 18px;">
+				<li value="4">Mahabharata</li>
+				<li>Ramayana</li>
+				<li>Wings of Fire: An Autobiography</li>
+				<li>Three Thousand Stitches</li>
+			</ol>
+		  	</div>
+		  <div class="column">
+		    <ol type="I" style="font-size: 18px;">
+				<li >Mahabharata</li>
+				<li>Ramayana</li>
+				<li>Wings of Fire: An Autobiography</li>
+				<li>Three Thousand Stitches</li>
+			</ol>
+		  </div>
+		</div>	
+	</article>
+	<hr>
+	<section>
+		<h3>Description list section</h3>
+		<h2>World Wide Web terms:</h2>
+		<dl style="font-size: 18px;">
+			<dt>Internet</dt>
+			<dd>- It is a global network.Unlike online services, which are centrally controlled, the Internet is decentralized by design. Each Internet computer, called a host, is independent. Its operators can choose which Internet services to use and which local services to make available to the global Internet community. There are a variety of ways to access the Internet. For most of its existence the Internet was primarily a research and academic network. Today people and businesses around the world can use the Internet to retrieve information, communicate and conduct business globally, and access a vast array of services and resources online.</dd>
+			
+			<dt>Web browser</dt>
+			<dd>- It is a software which is used to browse and display pagea available over internet. It sends request to server for web based documents and services. It has no processing model. It stores user data in cookies in local machine.</dd>
+			
+			<dt>Web server</dt>
+			<dd>- It is a software which provides documents when requested by web browsers. It sees and approves requests made by web browsers and sends document in response. It has three processing models. It provides an area to store the website. It can be installed anywhere, but it needs to be on network.</dd>
+			
+			<dt>Hyperlink</dt>
+			<dd>- It is a reference to data that the user can follow by clicking or tapping. It points to whole document or to a specific element within a document.</dd>
+			
+			<dt>Hypertext</dt>
+			<dd>- It is text displayed on a computer display or other electronic devices with references i.e.hyperlinks to other text that reader can immediately access. It also sometimes used to describe tables, images and other presentational content formats with integrated hyperlinks.</dd>
+			
+			<dt>HTTP</dt>
+			<dd>- Hypertext Transfer Protocol is an application protocol for distributed, collaborative, hypermedia information systems. It is the foundation of data communication for the WWW. HTTP resources are identified and located on the network by URL.</dd>
+		</dl>
+	</section>
+	<hr>
+	<footer>
+		<h3>Footer section</h3>
+		<address>
+			Amisha Madan Pawar
+			<br>	
+			Contact No: 7620399317
+			<br>
+			Contact mail: <u style="color: blue">madanpawarm64Agmail.com</u>
+		</address>
+	</footer>
+</body>
+</html>
