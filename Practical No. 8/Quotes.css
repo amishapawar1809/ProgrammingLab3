@@ -1,0 +1,49 @@
+body
+{
+	background-color: rgb(183, 191, 200);
+}
+header
+{
+	text-align: center;
+	font-style: italic;
+}
+header hr
+{
+	border: 5px solid green;
+	width: 50%;
+}
+.container
+{
+	display: inline-block;
+	border: 10px solid black;
+}
+.quote1
+{
+	background-color: rgb(108, 19, 19);
+	color: white;
+	padding: 20px;
+	margin: 10px;
+	border-style: solid;
+	border-width: 10px;
+	border-color: #ff6666;
+}
+.quote2
+{
+	background-color: #c01b84;
+	color: white;
+	padding: 20px;
+	margin: 20px;
+	border-style: solid;
+	border-width: 10px;
+	border-color: #f075c3;
+}
+.quote3
+{
+	background-color: rgb(255, 87, 26);
+	color: white;
+	padding: 20px;
+	margin: 30px;
+	border-style: solid;
+	border-width: 10px;
+	border-color: #ff8f66;
+}

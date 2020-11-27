@@ -1,0 +1,42 @@
+body
+{
+	background-color: #f0f07f;
+}
+.h1col
+{
+	background-color: #00ffaa;
+}
+.headsec
+{
+	margin: 10px;
+	border-style: solid;
+	border-width: 5px;
+	border-color: #ff0084;
+}
+section
+{
+	background-color: rgb(77, 210, 255);
+	border-style: solid;
+	border-width: 4px;
+	border-color: rgb(255,0,0);
+	margin: 10px;
+}
+article
+{
+	background-color: #FAEBD7;
+	border-style: solid;
+	border-width: 3px;
+	border-color: rgb(0, 102, 0);
+}
+aside
+{
+	border-style: solid;
+	border-width: 3px;
+	border-color: #00ff00;
+}
+footer
+{
+	background-color: rgb(191, 128, 255);
+	color: white;
+	text-align: center;
+}
