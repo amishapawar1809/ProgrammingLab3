@@ -1,0 +1,29 @@
+body
+{
+	text-align: center;
+	background-color: #b4b4b4;
+}
+.div1
+{
+	display: inline-block;
+	border: 10px solid rgb(255,0,0);	
+	padding-left: 150px;
+	padding-right: 150px;
+	background-color: rgb(214, 255, 153);
+}
+.container
+{
+	display: inline-block;
+	padding: 50px;
+	border: 5px solid rgb(0,0,0);
+	background-color: #ffaf4d;
+	text-align: left;
+}
+input
+{
+	height: 22px;
+}
+button
+{
+	font-size: 20px;
+}

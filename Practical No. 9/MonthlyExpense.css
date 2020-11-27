@@ -1,0 +1,47 @@
+body
+{
+	background-color: #ffa280;
+	margin: 20px;
+}
+.header1
+{
+	background-color: rgb(255, 228, 225);
+	border-style: solid;
+	border-width: 5px;
+	border-color: #c71585;
+}
+.navi
+{
+	background-color: #ffff66;
+	border-style: solid;
+	border-width: 5px;
+	border-color: rgb(255, 0, 0);
+	position: fixed;
+	right: 0;
+	top: 40px;
+	height: 170px;
+	width: 500px;
+}
+.sectable
+{
+	background-color: #40e0d0;
+	border-style: solid;
+	border-width: 5px;
+	border-color: #66ff33;
+}
+section caption
+{
+	font-size: 20px;
+	max-width: 500px;
+	margin: auto;
+	border: 3px solid black;
+}
+footer
+{
+	background-color: #deb887;
+	text-align: left;
+	border-style: solid;
+	border-width: 5px;
+	border-color: rgb(0,0,0);
+	position: absolute;
+}
