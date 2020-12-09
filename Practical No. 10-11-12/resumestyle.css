@@ -1,0 +1,185 @@
+.container
+{
+	display: inline-block;
+	width: 1170px;
+	height: 900px;
+}
+p
+{
+	font-size: 20px;
+}
+.about p
+{
+	padding: 40px;
+}
+h1
+{
+	text-align: center;
+	font-size: 45px;
+}
+hr
+{
+	border: 3px solid black;
+	width: 80%;
+}
+img
+{
+	border-radius: 20%;
+	float: right;
+	width: 400px;
+}
+.navlink
+{
+	text-align: center;
+	padding: 15px;
+	margin: 0px;
+	font-size: 25px;
+	line-height: 30px;
+	right: 0;
+	top: 40px;	
+	position: fixed;
+	background-color: #FFE4C4;
+}
+.navlink ul 
+{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	width: 250px;
+}
+.navlink li a 
+{
+	display: block;
+	color: #000;
+	padding: 20px 20px;
+	text-decoration: none;
+	font-size: 25px;
+	padding-left: 20px;	
+}
+.navlink li a.active 
+{
+	background-color: #4CAF50;
+	color: white;
+}
+.navlink li a:hover:not(.active) 
+{
+	background-color: #555;
+	color:white; 
+}
+.navlink .closebtn 
+{
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+table
+{
+	font-family: arial;
+	border-collapse: collapse;
+	width: 70%;
+	margin-left: 125px;
+}
+td, th 
+{
+	border: 3px solid black;
+	text-align: center;
+	padding: 8px;
+}
+.column
+{
+	float: left;
+}
+.row
+{
+	margin-left: 30px;
+}
+.row:after 
+{
+	content: "";
+	display: table;
+	clear: both;	
+}
+.edu, .lang, .exp
+{
+	background-color: #FFFACD;
+	padding: 10px;
+}
+.tech, .pro, .hob
+{
+	background-color: rgb(224, 255, 255);
+	padding: 10px;
+}
+.tech ul
+{
+	width: 320px;
+	list-style-type: circle;
+	font-size: 18px;
+}
+.exp ul
+{
+	width: 600px;
+	margin-left: 30px;
+	list-style-type: circle;
+	font-size: 20px;
+}
+.hob p
+{
+	text-align: center;
+}
+.contact
+{
+	background-color: rgb(105, 105, 105);
+	color: white;
+	padding: 10px;
+}
+.contact hr, .blog hr
+{
+	border: 1px solid black;
+	width: 50%;
+}
+.contact p
+{
+	font-size: 25px;
+	text-align: center;
+}
+.blog
+{
+	border: 3px solid black;
+	background-color: #edc478;
+	text-align: center;
+}
+.blog ul
+{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	font-size: 25px;
+	text-align: center;
+}
+.blog li
+{
+	float: center;
+	display: inline-block;
+}
+.blog li a 
+{
+  	display: inline-block;
+  	color: black;
+  	padding: 14px 16px;
+  	text-decoration: none;
+}
+
+.blog li a:hover:not(.active) 
+{
+  	background-color: rgb(128, 128, 128);
+  	color: white;
+}
+
+.blog li a.active 
+{
+  	background-color: rgb(128, 128, 128);
+  	color: white;
+}
